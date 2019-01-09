@@ -18,7 +18,10 @@ module.exports = function(app) {
 			},
 			poloniex: function(next) {
 				app.services.poloniex.getExchangeRates(next);
-			}
+			},
+			cryptocompare: function(next) {
+                                app.services.cryptocompare.getExchangeRates('BTC', next);
+                        }
 		}, function(error, results) {
 
 			if (error) {

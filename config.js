@@ -83,4 +83,7 @@ module.exports = {
 	poloniex: process.env.CT_API_SERVER_POLONIEX ? JSON.parse(process.env.CT_API_SERVER_POLONIEX) : {
 		baseUrl: 'https://poloniex.com',
 	},
+	cryptocompare: process.env.CT_API_SERVER_CRYPTOCOMPARE ? JSON.parse(process.env.CT_API_SERVER_CRYPTOCOMPARE) : {
+                baseUrl: 'https://min-api.cryptocompare.com',
+        },
 };

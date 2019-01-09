@@ -7,6 +7,7 @@ module.exports = function(app) {
 		bitcoindZeroMQ: require('./bitcoind-zeromq')(app),
 		coinbase: require('./coinbase')(app),
 		poloniex: require('./poloniex')(app),
+		cryptocompare: require('./cryptocompare')(app),
 		onionMoneroBlockchainExplorer: require('./onion-monero-blockchain-explorer')(app),
 	};
 };
